@@ -1,14 +1,23 @@
+import Board from "./Board"
 import Tooltip from "./Tooltip"
-import Tooltop from "./Tooltop"
 
 function BoardParent() {
   return (
     <div className="board-parent">
-      <div className="tool-top-parent">
-        <Tooltop />
+      <div className="board-child">
+        <div className="tool-top-parent">
+          <Tooltip />
+        </div>
+        <div className="board-canvas">
+          <Board />
+        </div>
       </div>
 
       <div className="tool-tip-parent">
+        <Tooltip />
+      </div>
+
+      <div className="tool-bottom-parent">
         <Tooltip />
       </div>
     </div>

@@ -5,17 +5,37 @@
     background-color: green;
     position: relative;
 
-    .tool-top-parent {
+    .board-child {
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
+    }
+
+    .tool-top-parent {
+        min-height: 6%;
         max-height: 6%;
         background-color: lightgreen;
     }
 
+    .board-canvas {
+        flex-grow: 1;
+        background-color: palevioletred;
+    }
+
     .tool-tip-parent {
         position: absolute;
-        top: 20%;
+        top: 12%;
         left: 0;
         background-color: lightblue;
         height: 40%;
+    }
+
+    .tool-bottom-parent {
+        position: absolute;
+        width: 20%;
+        height: 6%;
+        bottom: 0;
+        left: 0;
+        background-color: lightcoral;
     }
 }
