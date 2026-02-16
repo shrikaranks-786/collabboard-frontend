@@ -1,0 +1,21 @@
+.board-parent {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: green;
+    position: relative;
+
+    .tool-top-parent {
+        flex-grow: 1;
+        max-height: 6%;
+        background-color: lightgreen;
+    }
+
+    .tool-tip-parent {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        background-color: lightblue;
+        height: 40%;
+    }
+}

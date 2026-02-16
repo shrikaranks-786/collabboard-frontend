@@ -1,0 +1,13 @@
+.main-board{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .main-content {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+        background-color: red;
+    }
+}
